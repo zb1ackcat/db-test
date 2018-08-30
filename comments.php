@@ -19,6 +19,8 @@
 	/* echo '<p> all is lost if this can be seen.</p>'; */
 	
 	echo "<p> This is the end.....My only friend the end</p>";
+	
+	//end of PHP Code.
 
 
 ?>
