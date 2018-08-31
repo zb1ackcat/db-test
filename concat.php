@@ -17,12 +17,12 @@ $city = 'Mesa';
 $state = 'Arizona';
 $zip = '85201';
 
-$address = $city . ', ' $state . ' ' . $zip;
+$address = $city . ', ' . $state . ' ' . $zip;
 
 
 
 // Print the values:
-echo "<p>The book <em>$book</em> was written by $first_name $last_name.</p>";
+echo "<p>The book <em>$book</em> was written by $first_name $last_name. They live here, $address</p>";
 
 ?>
 <body>
