@@ -7,7 +7,11 @@
 
 <?php # Script 1.8 - numbers.php
 
+	//Varibles that are currently not varible. 
 
+	$quantity = 30;
+	$price = 119.95;
+	$taxrate = .05;
 
 ?>
 <body>
