@@ -13,35 +13,25 @@
 	'June', 'July', 'August', 'September', 
 	'October', 'November', 'December'];	
 	
-	$days = range(1, 31);
-	$years = range(2018, 2022);
+
 	//months
-	echo '<select name="months">';
-	foreach ($months as $key => $value) {
-		echo "<option value=\"$key\">
-		$value</options>\n";
-	}
-	echo '</select>';
-	
-	# Days
-	
-		echo '<select name="days">';
-	foreach ($days as $value) {
-		echo "<option value=\"$key\">
-		$value</options>\n";
-	}
-	echo '</select>';
-	
-	
-	#years
-	
-	echo '<select name="years">';
-	foreach ($years as $value) {
-		echo "<option value=\"$key\">
-		$value</options>\n";
-	}
-	echo '</select>';
-	
+	echo '<select name="month">';
+foreach ($months as $key => $value) {
+	echo "<option value=\"$key\">$value</option>\n";
+}
+echo '</select>';
+// Mdays
+echo '<select name="day">';
+for ($day = 1; $day <= 31; $day++) {
+	echo "<option value=\"$day\">$day</option>\n";
+}
+echo '</select>';
+// Year
+echo '<select name="year">';
+for ($year = 2018; $year <= 2022; $year++) {
+	echo "<option value=\"$year\">$year</option>\n";
+}
+echo '</select>';	
 	?>
 	
 	

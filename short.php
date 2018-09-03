@@ -16,10 +16,52 @@
 <?php # Script 2.8 - sorting.php
 // Create the array:
 $movies = [
-	'Casablanca' => 10,
-	'To Kill a Mockingbird' => 10,
-	'The English Patient' => 2,
+	'Casablanca' => 3,
+	'To Kill a Mockingbird' => 4,
+	'The English Patient' => 3,
 	'Stranger Than Fiction' => 9,
 	'Story of the Weeping Camel' => 5,
-	'Donnie Darko' => 7
-];
+	'Donnie Darko' => 7,
+	'Wizard of Oz' => 10,
+	'The Matrix' => 10,
+	'The Fifth Element' => 10	
+	];
+	
+	echo '<tr><td colspan="2">
+	<Strong> In Their OG Order:
+	</stron></td></tr>';
+	
+	foreach ($movies as $title => $rating) {
+		echo "<tr><td>$rating</td>
+		<td>$title</td></tr>\n";
+	};
+	
+	#Ksort
+	
+	ksort($movies);
+	
+		echo '<tr><td colspan="2">
+	<Strong> In Alpha Order:
+	</stron></td></tr>';
+	
+	foreach ($movies as $title => $rating) {
+		echo "<tr><td>$rating</td>
+		<td>$title</td></tr>\n";
+	};
+	
+	##ARsort
+	arsort($movies);
+		echo '<tr><td colspan="2">
+	<Strong> In Ratings order:
+	</stron></td></tr>';
+	
+	foreach ($movies as $title => $rating) {
+		echo "<tr><td>$rating</td>
+		<td>$title</td></tr>\n";
+	};
+	
+?>
+</tbody>
+</table>
+</body>
+</html>
